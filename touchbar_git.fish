@@ -1,5 +1,5 @@
 function touchbar_git
-    if set match (string match -r 'F(\d+)' $argv[1])
+    if set match (string match -r -i 'F(\d+)' $argv[1])
         set -g TOUCHBAR_GIT_KEY $match[2]
     else
         echo "usage: touchbar_git <Fn KEY>"

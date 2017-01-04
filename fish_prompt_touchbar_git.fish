@@ -8,6 +8,6 @@ function fish_prompt_touchbar_git --on-event fish_prompt
         end
         touchbar_set F$TOUCHBAR_GIT_KEY \u2325 $branch_name $git_ahead $git_dirty
     else
-        touchbar_set F$TOUCHBAR_GIT_KEY F$TOUCHBAR_GIT_KEY
+        touchbar_set F$TOUCHBAR_GIT_KEY Git
     end
 end
